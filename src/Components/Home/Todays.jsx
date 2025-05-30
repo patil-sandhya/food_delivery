@@ -5,6 +5,9 @@ import { useRouter } from "next/navigation";
 import { useAlertAndLoader } from "@/app/layout";
 import { useAuth } from "@/context/AuthContext/Auth";
 import { useCartContext } from "@/context/CartContext/CartContext";
+import bigb from '@/assets/todays/bigb.webp';
+import nachos from '@/assets/todays/nachos.webp';
+import Image from "next/image";
 
 const Todays = () => {
     const { isLoggedIn,userData } = useAuth();
@@ -58,16 +61,16 @@ const Todays = () => {
         <div className="flex gap-4 flex-col sm:flex-row lg:gap-0 lg:mx-14 md:mx-10  md:gap-5">
           <div className="sm:w-1/2 ">
             <div className="hidden sm:flex  ">
-              <img
+              <Image
                 className="border my-5 bg-white rounded-2xl py-10 shadow-lg"
-                src="https://pngfile.net/public/uploads/preview/burger-png-image-117034393760cqkc5zh3r.png"
+                src={bigb}
                 alt=""
               />
             </div>
             <div className="flex sm:hidden justify-center items-center  ">
-              <img
+              <Image
                 className="border mb-5 bg-white rounded-2xl py-5 shadow-lg"
-                src="https://theeburgerdude.com/wp-content/uploads/2022/09/9093e9_3586bfb7fe874b84ada96718ebedb1a8_mv2-1.webp"
+                src={nachos}
                 alt=""
               />
             </div>
@@ -112,16 +115,16 @@ const Todays = () => {
               </button>
             </div>
             <div className="hidden sm:flex lg:mt-5 ">
-              <img
+              <Image
                 className="border bg-white lg:max-w-[500px] lg:mt-5 md:mt-16 rounded-2xl py-8 shadow-lg"
-                src="https://theeburgerdude.com/wp-content/uploads/2022/09/9093e9_3586bfb7fe874b84ada96718ebedb1a8_mv2-1.webp"
+                src={nachos}
                 alt=""
               />
             </div>
             <div className="flex sm:hidden justify-center items-center ">
-              <img
+              <Image
                 className="border bg-white mt-5 lg:mt-5 md:mt-14 rounded-2xl py-8 shadow-lg"
-                src="https://pngfile.net/public/uploads/preview/burger-png-image-117034393760cqkc5zh3r.png"
+                src={bigb}
                 alt=""
               />
             </div>

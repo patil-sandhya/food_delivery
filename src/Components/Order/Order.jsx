@@ -5,6 +5,8 @@ import OrderApi from '@/Services/Order'
 import { useEffect, useState } from 'react'
 import CartCard from '../Cart/CartCard'
 import Link from 'next/link'
+import bagImg from '@/assets/cart/bag.png';
+import Image from 'next/image'
 
 const Order = () => {
   const [orders, setOrders] = useState([])
@@ -69,7 +71,7 @@ const Order = () => {
                 No orders found. <br />
                 <Link href="/menu" className='cursor-pointer hover:text-textClr underline'> Ready to place your first one? </Link>🍕
                <div className='flex justify-center items-center mt-5'>
-                 <img src="https://png.pngtree.com/png-clipart/20231214/ourmid/pngtree-cartoon-shopping-bag-cutout-elements-png-image_11341396.png" className='rounded-full h-48 w-48' alt="" />
+                 <Image src={bagImg} className='rounded-full h-48 w-48' alt="" />
                </div>
               </div>
       </div>

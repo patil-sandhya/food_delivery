@@ -6,6 +6,8 @@ import AddressModal from './AddressModal'
 import { useAuth } from '@/context/AuthContext/Auth'
 import PaymentPopup from './PaymentPopup'
 import Link from 'next/link'
+import emptycart from '@/assets/cart/emptycart.png';
+import Image from 'next/image'
 
 const Cart = () => {
  const {cartItem} = useCartContext()
@@ -123,7 +125,7 @@ const [isModalOpen, setModalOpen] = useState(false);
                 You’re just a few clicks away from deliciousness 🍲🛒 <br /> 
                 <Link href="/menu" className='cursor-pointer hover:text-textClr underline'> Start exploring!</Link>
                <div className='flex justify-center items-center mt-5'>
-                 <img src="https://www.kindpng.com/picc/m/174-1749396_empty-cart-your-cart-is-empty-hd-png.png" className='rounded-full h-48 w-48' alt="" />
+                 <Image src={emptycart} className='rounded-full h-48 w-48' alt="" />
                </div>
               </div>
       </div>    

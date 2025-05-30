@@ -1,6 +1,8 @@
 "use client";
 import OTPModal from "@/Components/Home/OtpModal";
 import { useState } from "react";
+import leafImg from '@/assets/banner/leafImg.jpg';
+import Image from "next/image";
 
 const Subscribe = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,8 +19,8 @@ const Subscribe = () => {
       <section className="py-20  bg-white">
         <div className="container relative overflow-hidden mx-auto px-4">
           <div className="absolute inset-0 z-0">
-            <img
-              src="https://c8.alamy.com/comp/W20AEP/food-background-with-traditional-ingredients-for-mediterranean-cuisine-over-white-background-top-view-with-copy-space-italian-food-W20AEP.jpg"
+            <Image
+              src={leafImg}
               alt="Fresh fruits background"
               className="w-full h-full object-cover"
             />

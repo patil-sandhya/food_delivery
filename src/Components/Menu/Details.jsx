@@ -50,7 +50,7 @@ const Details = ({closeModal,_id, category,imageUrl,name, price,description}) =>
   return (
     <>
      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
-    <div className="relative h-5/6 overflow-y-auto mx-2 sm:mx-0  bg-white  rounded-xl w-full max-w-md shadow-lg">
+    <div className="relative h-5/6 custom-scrollbar overflow-y-auto mx-2 sm:mx-0  bg-white  rounded-xl w-full max-w-md shadow-lg">
       {/* Close button */}
       <div className="sticky top-0 z-10 w-full bg-white border-b px-4  flex justify-end">
     <button
