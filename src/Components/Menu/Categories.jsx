@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image';
-import pizzaImg from '@/assets/pizza.png';
-import allImg from '@/assets/all.jpg';
-import biryaniImg from '@/assets/biryani.png';
-import burgerImg from '@/assets/burger.png';
-import dessertImg from '@/assets/dessert.png';
-import mexicanImg from '@/assets/mexican.png';
-import specialImg from '@/assets/special.png';
+import pizzaImg from '@/assets/category/pizza.png';
+import allImg from '@/assets/category/all.jpg';
+import biryaniImg from '@/assets/category/biryani.png';
+import burgerImg from '@/assets/category/burger.png';
+import dessertImg from '@/assets/category/dessert.png';
+import mexicanImg from '@/assets/category/mexican.png';
+import specialImg from '@/assets/category/special.png';
 
 const categoryList = [
     {

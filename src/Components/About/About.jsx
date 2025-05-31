@@ -1,4 +1,6 @@
 import React from 'react'
+import junkfood from '@/assets/about/junkFood.webp';
+import Image from 'next/image';
 
 const Card = ({val, head})=>{
     return (
@@ -28,7 +30,7 @@ const About = () => {
             </div>
             
             <div className='w-full lg:w-1/2'>
-                <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/09/unhealthy-junk-food.jpg?quality=82&strip=1" className='rounded-md w-full h-1/2' alt="" />
+                <Image src={junkfood} className='rounded-md w-full h-1/2' alt="" />
                 <div className='h-1/2 mt-4 rounded-md p-5 gap-4 lg:gap-2 justify-center w-full flex flex-wrap bg-white shadow-inner'>
                     <Card val={"800+"} head={"Positive reviews"} />
                     <Card val={"2k"} head={"Happy Customers"} />

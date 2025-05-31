@@ -7,6 +7,11 @@ import { Eye, EyeOff } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react"
+import maggie from '@/assets/about/maggie.png';
+import paneer from '@/assets/about/paneer.webp';
+import pasta from '@/assets/about/pasta.png';
+import vegPizza from '@/assets/about/vegPizza.png';
+import Image from "next/image";
 
 
 const Signup = () => {
@@ -252,23 +257,23 @@ const Signup = () => {
   <div className="flex-1 relative bg-primary pt-8 lg:pt-4 flex items-center ">
      <div className="relative  rounded-md  w-full max-w-lg mx-auto h-[400px]">
             <div className="flex relative flex-col justify-center  ">
-              <img
-                src="https://thearchrestaurant.in/wp-content/uploads/elementor/thumbs/food-4-qooemlole270kpvap6l9swbwlhuvnxufp299h4mlhk.png"
+              <Image
+                src={paneer}
                 alt="Bicycle with calendar illustration"
                 className="absolute -top-5 lg:-top-10 left-10 w-64 md:w-80"
               />
-              <img
-                src="https://www.pngkey.com/png/full/72-724075_italian-pasta-png-penne-pasta-png.png"
+              <Image
+                src={pasta}
                 alt="Bicycle with calendar illustration"
                 className="absolute top-10 left-44 md:left-52 md:w-80 w-52 "
               />
-              <img
-                src="https://png.pngtree.com/png-vector/20241211/ourmid/pngtree-authentic-italian-pizza-with-cheese-and-fresh-vegetable-toppings-png-image_14714611.png"
+              <Image
+                src={vegPizza}
                 alt="Bicycle with calendar illustration"
                 className="absolute top-20 left-2 md:left-2 md:w-72 w-60 "
               />
-              <img
-                src="https://png.pngtree.com/png-vector/20240322/ourmid/pngtree-instant-fried-noodles-png-image_12178744.png"
+              <Image
+                src={maggie}
                 alt="Bicycle with calendar illustration"
                 className="absolute top-24 md:top-28 left-28 md:left-28 md:w-72 w-60 "
               />

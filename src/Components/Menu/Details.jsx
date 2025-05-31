@@ -50,7 +50,7 @@ const Details = ({closeModal,_id, category,imageUrl,name, price,description}) =>
   return (
     <>
      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
-    <div className="relative h-5/6 overflow-y-auto mx-2 sm:mx-0  bg-white  rounded-xl w-full max-w-md shadow-lg">
+    <div className="relative h-5/6 custom-scrollbar overflow-y-auto mx-2 sm:mx-0  bg-white  rounded-xl w-full max-w-md shadow-lg">
       {/* Close button */}
       <div className="sticky top-0 z-10 w-full bg-white border-b px-4  flex justify-end">
     <button
@@ -102,13 +102,16 @@ const Details = ({closeModal,_id, category,imageUrl,name, price,description}) =>
 
       {/* Add to Cart */}
       <div className='flex justify-center my-8'>
-        <button
+        {/* <button
         className="inline-block px-8 bg-primary text-white py-3 rounded-full hover:bg-coral-600 transition"
         onClick={() => {
           handleAddtoCart(_id)
         }}
       >
         Add to Cart
+      </button> */}
+      <button onClick={()=> handleAddtoCart(_id)} className="mt-2 bg-[#f96d6d] rounded-md hover:bg-primary text-white font-medium px-8 py-2 transition-colors duration-200 transform -skew-x-12 ">
+        <span className="transform skew-x-12">Add To Cart</span>
       </button>
       </div>
       </div>

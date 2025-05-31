@@ -6,13 +6,17 @@ import AddressModal from './AddressModal'
 import { useAuth } from '@/context/AuthContext/Auth'
 import PaymentPopup from './PaymentPopup'
 import Link from 'next/link'
+import emptycart from '@/assets/cart/emptycart.png';
+import Image from 'next/image'
+import boxImg from '@/assets/cart/box.png';
+import { useAlertAndLoader } from '@/app/layout'
 
 const Cart = () => {
  const {cartItem} = useCartContext()
 const [showAddressModal, setShowAddressModal] = useState(false);
   const { userAddress} = useAuth();
 const [isModalOpen, setModalOpen] = useState(false);
-
+  const {setAlert} = useAlertAndLoader()
   const [bill, setBill] = useState({
     itemTotal:0,
     gst:0,
@@ -30,7 +34,13 @@ const [isModalOpen, setModalOpen] = useState(false);
       {...prev, itemTotal:total, gst, grandTotal}
     ))
   }
-
+ const handlePayment = ()=>{
+  if(!userAddress){
+    setAlert('warning', 'Please add your address!')
+  }else{
+    setModalOpen(true) 
+  }
+ }
   useEffect(()=>{
     calculateBill()
   },[cartItem])
@@ -100,7 +110,7 @@ const [isModalOpen, setModalOpen] = useState(false);
         }
         <div className='flex justify-center gap-8 items-center'>
           
-          <button onClick={() => setModalOpen(true)} className="flex items-center justify-center text-primary px-8 py-4 rounded-md border border-primary font-semibold  transition-colors bg-white backdrop-blur-sm">
+          <button onClick={handlePayment} className="flex items-center justify-center text-primary px-8 py-4 rounded-md border border-primary font-semibold  transition-colors bg-white backdrop-blur-sm">
                 Make a Payment
               </button>
               {
@@ -113,7 +123,7 @@ const [isModalOpen, setModalOpen] = useState(false);
                
         </div>
         <div>
-          <img src="https://www.pngplay.com/wp-content/uploads/9/Lunch-Box-PNG-Free-File-Download.png" alt="" />
+          <Image src={boxImg} alt="lunch box" />
         </div>
       </div>
       </>
@@ -123,7 +133,7 @@ const [isModalOpen, setModalOpen] = useState(false);
                 You’re just a few clicks away from deliciousness 🍲🛒 <br /> 
                 <Link href="/menu" className='cursor-pointer hover:text-textClr underline'> Start exploring!</Link>
                <div className='flex justify-center items-center mt-5'>
-                 <img src="https://www.kindpng.com/picc/m/174-1749396_empty-cart-your-cart-is-empty-hd-png.png" className='rounded-full h-48 w-48' alt="" />
+                 <Image src={emptycart} className='rounded-full h-48 w-48' alt="" />
                </div>
               </div>
       </div>    
