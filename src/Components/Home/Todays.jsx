@@ -110,9 +110,19 @@ const Todays = () => {
                 stacked high with melty cheese, crispy veggies, and secret sauce
                 magic.
               </p>
-              <button onClick={() => handleAddtoCart("683443f4be68f40ccd244e34")} className="mt-2 bg-[#f96d6d] rounded-md hover:bg-primary text-white font-medium px-8 py-3 transition-colors duration-200 transform -skew-x-12 hover:scale-105">
-                <span className="transform skew-x-12">Add To Cart</span>
+               <button
+              onClick={() => handleAddtoCart("683443f4be68f40ccd244e34")}
+                className="mt-2 inline-block bg-[#f96d6d]  rounded-md hover:bg-primary text-white font-medium px-8 py-3 transition-all duration-200 hover:scale-105"
+                style={{
+                  clipPath:
+                    "polygon(0 0, calc(100% - 25px) 0, 100% 100%, 0 100%)",
+                }}
+              >
+                Add To Cart
               </button>
+              {/* <button onClick={() => handleAddtoCart("683443f4be68f40ccd244e34")} className="mt-2 bg-[#f96d6d] rounded-md hover:bg-primary text-white font-medium px-8 py-3 transition-colors duration-200 transform -skew-x-12 hover:scale-105">
+                <span className="transform skew-x-12">Add To Cart</span>
+              </button> */}
             </div>
             <div className="hidden sm:flex lg:mt-5 ">
               <Image

@@ -5,6 +5,8 @@ import { useCartContext } from '@/context/CartContext/CartContext';
 import OrderApi from '@/Services/Order';
 import { useRouter } from 'next/navigation';
 import { useState, useRef } from 'react';
+import phonepay from '@/assets/cart/phonepay.jpeg';
+import Image from 'next/image';
 
 export default function PaymentPopup({ isOpen, onClose, totalAmount }) {
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -77,8 +79,8 @@ export default function PaymentPopup({ isOpen, onClose, totalAmount }) {
 
         {/* QR Image */}
         <div className="flex flex-col items-center">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pcwkj2OmSn97Tgz88hhQtm52O0pSF6PStA&s"
+          <Image
+            src={phonepay}
             alt="PhonePe QR"
             className="w-52 h-52 object-contain mb-4"
           />

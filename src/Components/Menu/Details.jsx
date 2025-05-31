@@ -102,13 +102,16 @@ const Details = ({closeModal,_id, category,imageUrl,name, price,description}) =>
 
       {/* Add to Cart */}
       <div className='flex justify-center my-8'>
-        <button
+        {/* <button
         className="inline-block px-8 bg-primary text-white py-3 rounded-full hover:bg-coral-600 transition"
         onClick={() => {
           handleAddtoCart(_id)
         }}
       >
         Add to Cart
+      </button> */}
+      <button onClick={()=> handleAddtoCart(_id)} className="mt-2 bg-[#f96d6d] rounded-md hover:bg-primary text-white font-medium px-8 py-2 transition-colors duration-200 transform -skew-x-12 ">
+        <span className="transform skew-x-12">Add To Cart</span>
       </button>
       </div>
       </div>

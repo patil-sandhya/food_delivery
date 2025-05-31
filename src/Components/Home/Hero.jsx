@@ -7,6 +7,7 @@ import fastFood from '@/assets/hero/fastFood.png';
 
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -44,12 +45,16 @@ export default function Hero() {
               Get your favorite meals delivered hot and fresh—right when you want them. From local favorites to global bites, we bring great food straight to your door with just a few taps. Fast, easy, and always delicious.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/menu">
               <button className="bg-primary hover:bg-coral-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-colors shadow-lg">
-                Get Started
+                Crave Corner
               </button>
+              </Link>
+              <Link href="/sign-up">
               <button className="flex items-center justify-center gap-3 text-primary px-6 py-4 rounded-full border border-primary hover:bg-white/80 transition-colors bg-white/60 backdrop-blur-sm">
                 Sign Up
               </button>
+              </Link>
             </div>
           </div>
 
