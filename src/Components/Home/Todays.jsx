@@ -44,7 +44,7 @@ const Todays = () => {
   }
 
   return (
-    <section className="py-16 bg-navy-900">
+    <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h4 className="text-base  font-semibold text-[#f9d649] uppercase tracking-[0.4em]">
@@ -78,7 +78,7 @@ const Todays = () => {
               <h4 className="text-2xl  font-semibold text-textClr">
                 Mexican Nachos
               </h4>
-              <p className="my-5 w-4/5">
+              <p className="my-5 text-textClr w-4/5">
                 Loaded, crunchy, and bursting with flavor—our Mexican nachos are the perfect blend of spice, cheese, and zest in every bite. Topped with gooey cheese, fresh salsa, and just the right amount of kick—nachos like you’ve never had before.
               </p>
               {/* <button
@@ -104,7 +104,7 @@ const Todays = () => {
               <h4 className="text-2xl  font-semibold text-textClr">
                 Pretty Big Burger
               </h4>
-              <p className="my-5 w-4/5">
+              <p className="my-5 w-4/5 text-textClr">
                 Our burger is packed with flavor and grilled to perfection—every
                 bite is pure satisfaction. Made with 100% fresh ingredients and
                 stacked high with melty cheese, crispy veggies, and secret sauce

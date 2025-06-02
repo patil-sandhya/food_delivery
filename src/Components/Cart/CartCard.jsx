@@ -52,7 +52,7 @@ const CartCard = ({name, price, foodid,imageUrl,qty, type}) => {
 
 
   return (
-    <div className='flex min-w-[360px] p-4 md:p-5 justify-between rounded-md shadow-inner bg-secondary'>
+    <div className='flex text-textClr min-w-[300px] sm:min-w-[360px] p-4 md:p-5 justify-between rounded-md shadow-inner bg-secondary'>
         <div className='flex gap-5 md:gap-10 items-center'>
             <img src={imageUrl} alt="" className='h-32 w-32 ' />
             <div>

@@ -33,7 +33,7 @@ const Order = () => {
     }
   },[userData])
   return (
-    <div className='mt-20 mx-2 md:mx-5'>
+    <div className='py-10 sm:py-20 px-2 bg-white text-textClr md:px-5'>
       {
         (orders.length > 0) ? (
           <div className='my-10 pt-10 mx-1 md:mx-5 space-y-5' >

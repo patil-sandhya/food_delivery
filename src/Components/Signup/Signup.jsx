@@ -265,7 +265,7 @@ const Signup = () => {
               <Image
                 src={pasta}
                 alt="Bicycle with calendar illustration"
-                className="absolute top-10 left-44 md:left-52 md:w-80 w-52 "
+                className="absolute top-10 left-40 md:left-52 md:w-80 w-48 "
               />
               <Image
                 src={vegPizza}

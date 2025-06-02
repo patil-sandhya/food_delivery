@@ -150,7 +150,7 @@ const { setAlert, setLoading } = useAlertAndLoader();
   // },[])
 
   return (
-    <div className='mt-20 mx-4 sm:mx-5'>
+    <div className='pt-20 pb-10 px-4 sm:px-5 bg-white text-textClr'>
 
         <div className='bg-[#fcf4f4] flex justify-center items-center py-5' >
             <Categories handleCategory={handleFilterOptionSelect} selectedMenu={filteredOption}/>
@@ -158,14 +158,14 @@ const { setAlert, setLoading } = useAlertAndLoader();
         </div>
         {/* filter, sort, location, search */}
         <div className='my-5 flex flex-col md:flex-row md:justify-between'>
-            <div className='flex md:w-1/2 gap-1 sm:gap-0 items-center   justify-start '>
+            <div className='flex md:w-1/2 gap-2 sm:gap-0 items-center   justify-start '>
             <div className="my-2  md:m-2 lg:m-5" ref={filterStatusRef}>
           <h3 className="text-md m-2 font-semibold">Filter Status</h3>
           <div className="relative inline-block text-left">
             <div>
               <button
                 type="button"
-                className="inline-flex w-44 items-center justify-between rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                className="inline-flex w-40 sm:w-44 items-center justify-between rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                 onClick={toggleFilterDropdown}
               >
                 {filteredOption}
@@ -212,7 +212,7 @@ const { setAlert, setLoading } = useAlertAndLoader();
             <div>
               <button
                 type="button"
-                className="inline-flex w-44 items-center justify-between rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                className="inline-flex w-40 sm:w-44 items-center justify-between rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                 onClick={togglesortDropdown}
               >
                 {sortedOption}
@@ -256,7 +256,7 @@ const { setAlert, setLoading } = useAlertAndLoader();
         </div>
             
         {/* image filter */}
-        <div className='mx-1 flex gap-8 flex-wrap justify-center mb-5'>
+        <div className='mx-1 flex  gap-8 flex-wrap justify-center mb-5'>
           {
             menus?.length < 1 && (
               <div className='md:w-3/5 w-full m-5 p-5 font-semibold shadow-lg rounded-2xl bg-primary text-white text-2xl text-center'>

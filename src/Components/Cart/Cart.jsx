@@ -73,7 +73,7 @@ const [isModalOpen, setModalOpen] = useState(false);
         <div>
           <h4 className='font-semibold text-lg text-white'>Bill Summary</h4>
         </div>
-        <div className='bg-white shadow-inner rounded-lg m-4 p-5 space-y-4'>
+        <div className='bg-white text-textClr shadow-inner rounded-lg m-4 p-5 space-y-4'>
             <div className='flex justify-between items-center'>
               <div>Item total</div>
               <div>₹{bill.itemTotal}</div>

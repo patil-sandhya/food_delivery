@@ -40,9 +40,9 @@ setAlert('success', 'Successfully Logout')
         aria-labelledby="options-menu"
         autoFocus
         tabIndex={-1}
-        className="absolute z-[1] w-[300px] -translate-x-[80%] translate-y-[58%] rounded-lg border-2 bg-white text-sm shadow-xl "
+        className="absolute text-textClr z-[1] w-[300px] -translate-x-[75%] sm:-translate-x-[80%] translate-y-[58%] rounded-lg border-2 bg-white text-sm shadow-xl "
       >
-        <div className="flex items-center gap-2 border-b p-5">
+        <div className="flex  items-center gap-2 border-b p-5">
           <div className="w-[30%]">
             <div className="box-content flex h-[30px] w-[30px]  items-center justify-center rounded-full bg-gradient-to-r from-[#bb1212] to-[#dc4e4e] p-2 capitalize text-white">
               {userDetails?.name[0]}
@@ -129,7 +129,7 @@ const [showProfile, setShowProfile] = useState(false);
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 text-textClr left-0 right-0 z-50 transition-all duration-300 ${
         (isScrolled || pathName != '/')? "bg-[#f7eded] backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
