@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="flex flex-col  lg:flex-row items-center min-h-[80vh]">
           {/* Left Content */}
           <div className="lg:w-1/2 md:pl-10  mb-12 lg:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 leading-tight mb-6">
+            <h1 className="text-4xl text-textClr md:text-5xl lg:text-6xl font-bold text-navy-900 leading-tight mb-6">
               Fastest <span className="text-primary">Food</span>
               <br />
               <span className="text-primary">Delivery</span> &
@@ -45,7 +45,7 @@ export default function Hero() {
               Get your favorite meals delivered hot and fresh—right when you want them. From local favorites to global bites, we bring great food straight to your door with just a few taps. Fast, easy, and always delicious.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/menu">
+              <Link href="/menu" >
               <button className="bg-primary hover:bg-coral-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-colors shadow-lg">
                 Crave Corner
               </button>

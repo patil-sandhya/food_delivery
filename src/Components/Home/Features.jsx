@@ -35,7 +35,7 @@ export default function Features() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+          <h2 className="text-textClr text-3xl md:text-4xl font-bold text-navy-900 mb-4">
             Why Choose <span className="text-primary">Forky</span>?
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">

@@ -29,7 +29,7 @@ const Subscribe = () => {
           </div>
           <div className="container  mx-auto px-4 pt-24 pb-12 relative z-10">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
+              <h2 className="text-3xl text-textClr md:text-4xl font-bold text-navy-900 mb-4">
                 Tasty News, Delivered Weekly
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
