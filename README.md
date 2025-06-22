@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🍴 Forky - Food Delivery Web App
 
-First, run the development server:
+**Forky** is a modern and responsive food delivery web application built with Next.js. Users can browse a variety of dishes, manage their cart, place orders, and receive real-time feedback—all through a clean and intuitive UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🌐 [View Live Website](https://forky-ten.vercel.app/menu)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🖼️ Pages Overview
 
-To learn more about Next.js, take a look at the following resources:
+### 🏠 Home Page
+- Showcases the brand with a clean hero section.
+- Includes a mobile number subscription form and promotional content.
+- Allows quick access to menu browsing.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot 2025-06-22 214322](https://github.com/user-attachments/assets/9d20d8d3-9fee-4c19-8abb-8fbbfd658637)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📋 Menu Page
+- Displays all food items with filtering by categories (e.g., Pizza, Burger).
+- Items are listed with image, name, price, and "Add to Cart" functionality.
+- Clicking an item opens a detailed popup with image, price, quantity selector, and description.
 
-## Deploy on Vercel
+![Screenshot 2025-06-22 214301](https://github.com/user-attachments/assets/e232ded1-31c0-4695-be4d-4a0dc688cfd5)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🛒 Cart Page
+- Shows all added items with quantity controls.
+- Displays total price calculation and allows users to remove items.
+- Users can proceed to checkout after confirming their cart.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Screenshot 2025-06-22 214116](https://github.com/user-attachments/assets/5f05b930-5549-46b0-a56e-35565503ba6a)
+
+### 📦 Order Page
+- Collects user delivery address via popup.
+- Displays selected items with final pricing.
+- Includes OTP verification (simulated) and order confirmation.
+
+![Screenshot 2025-06-22 213918](https://github.com/user-attachments/assets/947c90a4-0cb0-47de-945a-568eb904db7d)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js, React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Deployment**: Vercel (Frontend), Render (Backend)
+
+---
+
+## 📦 Features
+
+- 🔐 User Authentication (Signup, Login)
+- 🧾 OTP Verification Flow
+- 🛍️ Product Listing & Filtering
+- 🛒 Cart Management (Add/Remove/Update)
+- 📍 Address Collection Popup
+- ✅ Order Placement with Confirmation
+- 📱 Fully Responsive Design
+
+---
+
+
